@@ -8,7 +8,7 @@ var PORT = args[0];
 //Root path
 app.get('/', function(req, res) 
 {
-	res.send("Hello");
+	res.send("Hello!");
 });
 
 var server = app.listen(PORT, function () {
