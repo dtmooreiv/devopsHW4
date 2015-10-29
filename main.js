@@ -5,7 +5,6 @@ var app = express()
 var args = process.argv.slice(2);
 var PORT = args[0];
 
-//Root path
 app.get('/', function(req, res) 
 {
 	res.send("Hello!");
