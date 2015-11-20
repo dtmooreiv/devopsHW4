@@ -1,0 +1,8 @@
+redis:
+  image: crosbymichael/redis
+redis_ambassador:
+  image: svendowideit/ambassador
+  links:
+    - redis
+  ports:
+    - "6379:6379"
