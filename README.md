@@ -1,3 +1,22 @@
+# Part One
+Screencast:
+![Part One Screencast](https://i.imgur.com/jvIAPdr.gif)
+In the above screencast, I build and run two containers. The first container, named socat, is the legacy application that creates a file that needs to be exposed with socat. The second container, named curl, reads this file.
+
+
+# Part Two
+Screencast:
+![Part Two Screencast](https://i.imgur.com/UrtXKLT.gif)
+In the above screencast, I have two separate docker-machines running, redis-host and redis-client, backed by a virtualbox driver. I activate the environment for the redis-host and bring it up with docker-compose. I then activate the environment for the redis-client and bring it up using a different compose.yml file. I can then send REST requests using curl to the client's ip and port. 
+
+# Part Three
+
+
+
+
+
+
+# Original README.md below: 
 # Workshop: Deployments and Deflighting
 
 In this workshop, we'll cover the basics of setting up a barebone deployment pipeline, in support of a green-blue deployment strategy.  We will be able to build upon this exercise in the upcoming homework and DEPLOYMENT milestone.
