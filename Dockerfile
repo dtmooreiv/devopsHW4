@@ -4,8 +4,8 @@ RUN apt-get install -y curl
 RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 RUN apt-get install -y nodejs
 
-COPY App /src/App
+COPY App /src
 
-RUN cd /src/App; npm install
+RUN cd /src; npm install
 
-CMD ["node", "/src/App/main.js"]
+CMD ["node", "/src/main.js"]
