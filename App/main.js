@@ -7,7 +7,7 @@ var PORT = 8080
 
 app.get('/', function(req, res) 
 {
-    res.status(200).send('Hello\n');
+    res.status(200).send('Hello Blue\n');
 });
 
 var server = app.listen(PORT, function () {
