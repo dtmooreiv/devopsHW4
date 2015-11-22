@@ -10,7 +10,9 @@ Screencast:
 In the above screencast, I have two separate docker-machines running, redis-host and redis-client, backed by a virtualbox driver. I activate the environment for the redis-host and bring it up with docker-compose. I then activate the environment for the redis-client and bring it up using a different compose.yml file. I can then send REST requests using curl to the client's ip and port. 
 
 # Part Three
-
+Screencast:
+![Part Three Screencast](https://i.imgur.com/0zT6K2g.gif)
+In the above screencast, I make changes to an application, and demonstrate how committing and pushing these changes to a git remote repository creates a docker container running the new changes. This uses three hooks, a pre-commit on the machine editing the code, and post-receives in the green and blue repositories. The hook scripts are available in the git-hooks directory. The Dockerfile in the root of this directory is the docker file used to build the container. 
 
 
 
