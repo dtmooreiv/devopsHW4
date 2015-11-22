@@ -3,7 +3,7 @@ var fs      = require('fs')
 var app = express()
 
 var args = process.argv.slice(2);
-var PORT = args[0];
+var PORT = 8080
 
 app.get('/', function(req, res) 
 {
