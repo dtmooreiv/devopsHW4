@@ -1,0 +1,6 @@
+#!/bin/sh
+
+docker build -t app .
+docker rmi -f localhost:5000/app:latest
+docker tag app localhost:5000/app:latest
+docker push localhost:5000/app:latest

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+docker stop green_slice
+docker rm green_slice
+docker pull localhost:5000/app:latest
+docker run -p 3002:8080 -d --name green_slice app
